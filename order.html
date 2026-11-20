@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <title>Order Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5" style="max-width: 500px;">
+        <div class="card shadow">
+            <div class="card-header">
+                <h3 class="mb-0">Order Details</h3>
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item bg-transparent"><strong>Item:</strong> {{ order.item }}</li>
+                    <li class="list-group-item bg-transparent"><strong>Amount:</strong> ${{ order.amount }}</li>
+                    <!-- 🚨 IDOR PROOF: Shows the owner ID -->
+                    <li class="list-group-item bg-transparent text-danger">
+                        <strong>Owner ID:</strong> {{ order.user_id }} (Belongs to user #{{ order.user_id }})
+                    </li>
+                </ul>
+                <a href="/dashboard" class="btn btn-outline-secondary btn-sm">Back to Dashboard</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
