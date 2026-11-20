@@ -1,0 +1,6 @@
+--- STOLEN COMPANY DATA ---
+Order #1: Laptop ($899.99)
+Order #2: Mouse ($29.99)
+Order #3: Keyboard ($79.99)
+Order #4: Monitor ($249.99)
+User PII: alice@example.com, bob@example.com, admin@example.com
